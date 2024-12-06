@@ -1,0 +1,104 @@
+/* General body styling with background */
+body {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url('../images/barberview1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card Styling */
+.card {
+    background: rgba(255, 255, 255, 0.2); /* Transparent white background */
+    backdrop-filter: blur(10px); /* Apply blur to the background */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Title Styling */
+.card-title {
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+.card-title:hover {
+    color: #007bff;
+}
+
+/* Form Group and Input Styling */
+.form-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.input-group-text {
+    background: #f1f1f1;
+    border-right: none;
+    color: #007bff;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.form-control {
+    border-left: none;
+    border-radius: 0 0.5rem 0.5rem 0;
+    padding: 15px;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Button Styling */
+.btn-primary {
+    background: #007bff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Login Message Styling */
+#signupMessage {
+    color: #333;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    .card {
+        padding: 20px;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    .btn-primary {
+        font-size: 1rem;
+    }
+}

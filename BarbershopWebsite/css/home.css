@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+}
+
+header {
+    background: #34495e; /* Darker shade for modern look */
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.search-bar input:focus {
+    border-color: #e74c3c; /* Accent color */
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    background: #e74c3c; /* Accent color */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background 0.3s;
+}
+
+.search-bar button:hover {
+    background: #c0392b;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e74c3c; /* Accent color */
+}
+
+.hero {
+    background: url('../images/hero-background.jpg') no-repeat center center/cover;
+    height: 400px; /* Adjusted height for better visuals */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay for readability */
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero-button {
+    padding: 15px 30px;
+    background: #e74c3c; /* Accent color */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 18px;
+}
+
+.hero-button:hover {
+    background: #c0392b;
+}
+
+.featured-barbers {
+    padding: 60px 20px; /* More padding for spacious feel */
+    text-align: center;
+    background: #ffffff;
+}
+
+.featured-barbers h2 {
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #333;
+}
+
+.barber-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* More space for barbers */
+    gap: 30px; /* Increased gap for better layout */
+}
+
+.barber {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px; /* Increased padding */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Softer shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.barber:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); /* Enhanced hover effect */
+}
+
+.barber img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.barber h3 {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.barber p {
+    color: #666;
+}
+
+.book-button {
+    padding: 12px 20px;
+    background: #34495e; /* Darker accent color */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 16px;
+}
+
+.book-button:hover {
+    background: #2c3e50; /* Darker shade for hover */
+}
+
+footer {
+    background: #34495e; /* Consistent with header */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .footer-content {
+    margin-bottom: 10px;
+}
+
+footer .social-media a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .social-media a:hover {
+    color: #e74c3c; /* Accent color */
+}
+
+footer p a {
+    color: #e74c3c; /* Accent color */
+    text-decoration: none;
+}
+
+footer .newsletter {
+    margin-top: 10px;
+}
+
+footer .newsletter input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer .newsletter button {
+    padding: 8px 15px;
+    background: #e74c3c; /* Accent color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
